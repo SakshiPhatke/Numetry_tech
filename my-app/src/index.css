@@ -15,11 +15,19 @@
 
 a {
   font-weight: 500;
+<<<<<<< HEAD
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
+=======
+  color: #bb3289;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #bb3289;
+>>>>>>> 530bb32 (Second task)
 }
 
 body {
@@ -28,7 +36,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+<<<<<<< HEAD
 }
+=======
+  font-family: Arial, sans-serif;
+  }
+  
+
+>>>>>>> 530bb32 (Second task)
 
 h1 {
   font-size: 3.2em;
@@ -47,7 +62,11 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
+<<<<<<< HEAD
   border-color: #646cff;
+=======
+  border-color: #bb3289;
+>>>>>>> 530bb32 (Second task)
 }
 button:focus,
 button:focus-visible {
