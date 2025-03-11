@@ -1,0 +1,54 @@
+/* Full Page Background */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #ff416c, #8c52ff);
+  }
+  
+  /* Login Box */
+  .login-box {
+    width: 700px; /* Increased width */
+    background: black;
+    padding: 40px;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Headings */
+  h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #00c3
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  .success {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
