@@ -1,0 +1,95 @@
+/* Full-Screen Background */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('./assets/img3jpg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Contact Box */
+.contact-box {
+    display: flex;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50px 0px 50px 0px; /* Top-left and Bottom-right corners curved */
+    border: 2px solid black; /* Slim black border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+
+/* Left Section - Image */
+.contact-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 300px; /* Adjust size */
+    height: auto;
+}
+
+/* Right Section - Form */
+.contact-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.success-text {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+ .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block; /* Ensure message appears below input */
+  }
+  
+  
+  
