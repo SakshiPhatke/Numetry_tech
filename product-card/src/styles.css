@@ -1,0 +1,117 @@
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  h1.title {
+    font-size: 2rem;
+    color: #213547;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+    flex: 1 1 22%; /* Ensures 4 products in one row */
+    min-width: 250px; /* Minimum width for responsiveness */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .product-discount {
+    font-size: 0.9rem;
+    color: #ff5733;
+  }
+  
+  .product-timer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container-fluid {
+    width: 100%;  /* Full screen width */
+    padding: 20px; /* Adds some spacing */
+  }
+  
+  .row {
+    margin: 0 auto; /* Centers the row */
+    width: 100%;
+  }
+  
+  .col-lg-3 {
+    padding: 15px; /* Space between cards */
+  }
+  
