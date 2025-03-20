@@ -1,0 +1,53 @@
+.hero-section {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('../assets/img6.jpg') no-repeat center center/cover; /* Adjust as per your image */
+  color: white;
+    
+    
+
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section h3 {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+.hero-section h1,
+.hero-section h2,
+.hero-section h3 {
+  background: linear-gradient(45deg, #d3cccc, #d3cccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section h1 {
+  text-shadow: 0 0 5px #d3cccc, 0 0 20px #d3cccc, 0 0 30px #d3cccc;
+}
+
+.hero-section h2 {
+  text-shadow: 0 0 5px #d3cccc, 0 0 20px #d3cccc, 0 0 30px #d3cccc;
+}
+
+.hero-section h3 {
+  text-shadow: 0 0 5px #54a0ff, 0 0 20px #2e86de, 0 0 30px #341f97;
+}
+
+
+  

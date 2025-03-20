@@ -1,0 +1,155 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <style>
+        /* Default Light Mode Styles */
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+            background: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dark / Light Mode Toggle</h1>
+    <button id="theme-toggle">Switch to Dark Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        // Check and apply the saved theme from localStorage
+        function applyTheme() {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                body.classList.add("dark-mode");
+                toggleButton.textContent = "Switch to Light Mode";
+            } else {
+                body.classList.remove("dark-mode");
+                toggleButton.textContent = "Switch to Dark Mode";
+            }
+        }
+
+        // Toggle theme and save preference
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+            applyTheme();
+        });
+
+        // Apply theme on page load
+        applyTheme();
+    </script>
+</body>
+</html>
+=======
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <style>
+        /* Default Light Mode Styles */
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+            background: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dark / Light Mode Toggle</h1>
+    <button id="theme-toggle">Switch to Dark Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        // Check and apply the saved theme from localStorage
+        function applyTheme() {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                body.classList.add("dark-mode");
+                toggleButton.textContent = "Switch to Light Mode";
+            } else {
+                body.classList.remove("dark-mode");
+                toggleButton.textContent = "Switch to Dark Mode";
+            }
+        }
+
+        // Toggle theme and save preference
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            const isDarkMode = body.classList.contains("dark-mode");
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+            applyTheme();
+        });
+
+        // Apply theme on page load
+        applyTheme();
+    </script>
+</body>
+</html>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+>>>>>>> 68eae76 (Added Note-Taking App)
+>>>>>>> a606f3d (Added Note-Taking App)

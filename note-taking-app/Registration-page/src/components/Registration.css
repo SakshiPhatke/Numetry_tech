@@ -1,0 +1,124 @@
+.registration-container {
+    display: flex;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(to right, #c471f5, #fa71cd);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Left Section with Image */
+.left-section {
+    flex: 1;
+    max-width: 400px; /* Same as form width */
+    height: 500px; /* Same as form height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Styling */
+.left-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px; /* Rounded left corners */
+    object-fit: cover;
+}
+
+/* Right Section (Form) */
+.right-section {
+    flex: 1;
+    max-width: 400px; /* Matches image width */
+    height: 500px; /* Same as image height */
+    background: black; /* Keeps background black */
+    color: white;
+    padding: 30px;
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form Field Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none; /* Border removed */
+    background: transparent; /* Transparent input background */
+    color: white !important; /* Typed text will be WHITE */
+    outline: none; /* Removes focus border */
+    caret-color: white; /* Cursor color white */
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white placeholder */
+}
+
+/* Disable default input background on focus */
+.form-control:focus {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none; /* No white box on focus */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Submit Button */
+.btn-success {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Border removed */
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgb(232, 13, 224);
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .registration-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .left-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0; /* Adjusted for small screens */
+    }
+
+    .right-section {
+        max-width: 100%;
+        width: 90%;
+        height: auto;
+        border-radius: 0 0 10px 10px; /* Adjusted for small screens */
+    }
+    .success-msg {
+        color: lightgreen;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    
+}
